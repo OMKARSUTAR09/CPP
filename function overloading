@@ -1,0 +1,26 @@
+#include <iostream>
+
+class Overloaded {
+public:
+    void print() {
+        std::cout << "No arguments" << std::endl;
+    }
+
+    void print(int x) {
+        std::cout << "Integer: " << x << std::endl;
+    }
+
+    void print(double y) {
+        std::cout << "Double: " << y << std::endl;
+    }
+};
+
+int main() {
+    Overloaded obj;
+
+    obj.print();
+    obj.print(5);
+    obj.print(3.14);
+
+    return 0;
+}
